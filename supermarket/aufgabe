@@ -1,0 +1,144 @@
+Aufgabe für heute
+
+Aufgabe: Simuliere ein Multithreaded-Bankensystem mit Listen
+Beschreibung:
+In dieser Aufgabe sollen Sie ein simuliertes Bankensystem erstellen, das mehrere Kunden (dargestellt durch individuelle Threads) unterstützt, welche verschiedene Operationen auf ihren Bankkonten ausführen.
+Schritte:
+Erstellen Sie eine BankAccount Klasse. Diese Klasse sollte ein einzigartiges Konto-ID und einen Kontostand enthalten.
+
+
+Sie sollte auch Methoden für Einzahlungen (deposit), Abhebungen (withdraw) und eine Methode zum Abrufen des aktuellen Kontostandes (getBalance) haben.
+Erstellen Sie eine Bank Klasse. Diese Klasse sollte eine Liste von BankAccount-Instanzen enthalten. Sie sollte auch eine Methode für Überweisungen zwischen Konten (transfer) haben, die zwei BankAccount-Instanzen und einen Überweisungsbetrag als Parameter akzeptiert.
+Erstellen Sie eine Customer Runnable-Klasse. Jede Instanz dieser Klasse repräsentiert einen Kunden, der Einzahlungen, Abhebungen und Überweisungen auf seinem Konto durchführt. Sie können Zufallszahlen generieren, um die Beträge zu bestimmen.
+Erstellen Sie eine Simulation Klasse. In dieser Klasse sollten Sie eine Methode main haben, die mehrere Kunden (und damit mehrere Threads) erzeugt und startet.
+Anforderungen:
+Stellen Sie sicher, dass Ihre Anwendung thread-sicher ist. Verwenden Sie geeignete Synchronisierungstechniken, um sicherzustellen, dass das Konto eines Kunden nie einen negativen Saldo haben kann, und dass das Geld beim Überweisen korrekt zwischen den Konten verschoben wird.
+Fügen Sie geeignete sleep Anweisungen in Ihren Kunden-Threads hinzu, um realistische Verzögerungen zu simulieren.
+Um die Ergebnisse Ihrer Simulation zu überprüfen, fügen Sie am Ende Ihres Programms eine Methode hinzu, die die Endsumme aller Konten berechnet und ausgibt. Diese Summe sollte gleich der anfänglichen Gesamtsumme sein, wenn alle Transaktionen korrekt durchgeführt wurden.
+
+(Korrigierte Version)
+
+Bank System:
+
+Aufgabe für heute
+
+Aufgabe: Simuliere ein Multithreaded-Bankensystem mit Listen
+Beschreibung:
+In dieser Aufgabe sollen Sie ein simuliertes Bankensystem erstellen, das mehrere Kunden (dargestellt durch individuelle Threads) unterstützt, welche verschiedene Operationen auf ihren Bankkonten ausführen.
+Schritte:
+Erstellen Sie eine BankAccount Klasse. Diese Klasse sollte ein einzigartiges Konto-ID und einen Kontostand enthalten.
+
+
+Sie sollte auch Methoden für Einzahlungen (deposit), Abhebungen (withdraw) und eine Methode zum Abrufen des aktuellen Kontostandes (getBalance) haben.
+Erstellen Sie eine Bank Klasse. Diese Klasse sollte eine Liste von BankAccount-Instanzen enthalten. Sie sollte auch eine Methode für Überweisungen zwischen Konten (transfer) haben, die zwei BankAccount-Instanzen und einen Überweisungsbetrag als Parameter akzeptiert. ----- FERTIG
+Erstellen Sie eine Customer Runnable-Klasse. Jede Instanz dieser Klasse repräsentiert einen Kunden, der Einzahlungen, Abhebungen und Überweisungen auf seinem Konto durchführt. Sie können Zufallszahlen generieren, um die Beträge zu bestimmen. -----FERTIG
+Erstellen Sie eine Simulation Klasse. In dieser Klasse sollten Sie eine Methode main haben, die mehrere Kunden (und damit mehrere Threads) erzeugt und startet.
+Anforderungen:
+Stellen Sie sicher, dass Ihre Anwendung thread-sicher ist. Verwenden Sie geeignete Synchronisierungstechniken, um sicherzustellen, dass das Konto eines Kunden nie einen negativen Saldo haben kann, und dass das Geld beim Überweisen korrekt zwischen den Konten verschoben wird.
+Fügen Sie geeignete sleep Anweisungen in Ihren Kunden-Threads hinzu, um realistische Verzögerungen zu simulieren.
+Um die Ergebnisse Ihrer Simulation zu überprüfen, fügen Sie am Ende Ihres Programms eine Methode hinzu, die die Endsumme aller Konten berechnet und ausgibt. Diese Summe sollte gleich der anfänglichen Gesamtsumme sein, wenn alle Transaktionen korrekt durchgeführt wurden.
+
+(Korrigierte Version)
+
+
+Supermarktkasse:
+
+Aufgabe: Simuliere eine Supermarktkasse
+Erstelle eine einfache Simulation eines Supermarktes mit nur einer Kasse. Die Kunden in dieser Simulation sind Threads. Jeder Kunde kauft eine zufällige Anzahl von Artikeln (zwischen 1 und 10), und es dauert eine feste Zeit, um jeden Artikel zu scannen.
+Die Hauptpunkte der Aufgabe sind:
+Jeder "Kunde" ist ein Thread.
+Die "Kasse" ist eine Ressource, die nur von einem Thread zur gleichen Zeit genutzt werden kann.
+Jeder Kunde "kauft" eine zufällige Anzahl von Artikeln (du kannst die Anzahl beim Erzeugen des Kunden zufällig festlegen).
+Jeder Artikel benötigt eine bestimmte Zeit zum "Scannen" (z.B. 1 Sekunde).
+Nachdem alle Artikel eines Kunden gescannt wurden, beendet der Thread seine Ausführung.
+Verwende die Konsole, um den Fortschritt der Kasse zu zeigen, z.B. wann ein Kunde ankommt, wie viele Artikel er hat, wann er anfängt und aufhört zu scannen, etc.
+Du brauchst hierfür nur zwei Klassen: Kunde (die den Thread repräsentiert) und Supermarkt (die die main-Methode enthält, um die Simulation zu starten). Du könntest auch eine dritte Klasse, Kasse, erstellen, um den Scannprozess zu verwalten, aber das ist optional und du könntest diesen Teil in der Kunde Klasse selbst verwalten.
+
+Task:
+
+Hier ist eine JavaScript-Aufgabe mit der Schwierigkeitsstufe 6, die ohne HTML lösbar ist:
+
+Erstelle ein einfaches Konsolenbasiertes Aufgabenverwaltungssystem.
+
+Anforderungen:
+Herstelle eine Klasse Task, die 
+    Erstdie grundlegenden Eigenschaften eines Aufgabenobjekts repräsentiert:
+        Eine eindeutige ID - fertig
+        Eine Beschreibung der Aufgabe - fertig
+        Ein Status (z.B. "ausstehend", "erledigt") - fertig
+
+    Erstelle eine Klasse TaskManager, die die Aufgabenliste verwaltet und verschiedene Funktionen enthält:
+        Eine Methode zum Hinzufügen einer neuen Aufgabe - fertig
+        Eine Methode zum Aktualisieren des Status einer Aufgabe - ferig
+        Eine Methode zum Löschen einer Aufgabe - fertig
+        Eine Methode zum Anzeigen aller Aufgaben - fertig
+
+    Implementiere die Funktionen der TaskManager-Klasse, um die Aufgabenverwaltung zu ermöglichen:
+        Bei Hinzufügen einer neuen Aufgabe sollte eine eindeutige ID generiert werden und die Aufgabe zur Liste hinzugefügt werden. - fertig
+        Die Statusaktualisierung sollte anhand der ID erfolgen und den neuen Status festlegen. - fertig
+        Das Löschen einer Aufgabe sollte anhand der ID erfolgen und die Aufgabe aus der Liste entfernen. - fertig
+        Das Anzeigen aller Aufgaben sollte die gesamte Liste der Aufgaben ausgeben. - fertig
+
+    Implementiere eine einfache Benutzerschnittstelle in der Konsole, um mit dem Aufgabenverwaltungssystem zu interagieren:
+        Der Benutzer sollte Optionen sehen, um eine neue Aufgabe hinzuzufügen, den Status einer Aufgabe zu aktualisieren, eine Aufgabe zu löschen und alle Aufgaben anzuzeigen.
+        Der Benutzer sollte die entsprechende Option auswählen und die erforderlichen Informationen eingeben.
+
+Diese Aufgabe erfordert das Verständnis von Klassen, Objekten und Methoden in JavaScript sowie die Verwendung der Konsole zur Interaktion mit dem Benutzer. Du wirst in der Lage sein, neue Aufgaben hinzuzufügen, den Status von Aufgaben zu aktualisieren, Aufgaben zu löschen und alle Aufgaben anzuzeigen.
+
+Viel Erfolg bei der Umsetzung des Aufgabenverwaltungssystems!
+
+
+
+
+
+Erstelle eine JavaScript-Klasse für ein Einkaufswagen-System. Das System sollte die folgenden Funktionen unterstützen:
+
+    addItem(item): Diese Methode fügt ein Element zum Einkaufswagen hinzu. Das Element wird als Parameter übergeben und kann z.B. ein Produktobjekt mit Eigenschaften wie Name, Preis, Menge usw. sein.
+
+    removeItem(item): Diese Methode entfernt ein Element aus dem Einkaufswagen. Das Element wird als Parameter übergeben.
+
+    getTotalPrice(): Diese Methode berechnet den Gesamtpreis aller Elemente im Einkaufswagen und gibt ihn zurück.
+
+    getItems(): Diese Methode gibt alle Elemente im Einkaufswagen zurück.
+
+    clearCart(): Diese Methode leert den Einkaufswagen und entfernt alle Elemente daraus.
+
+Implementiere die oben genannten Funktionen in der Einkaufswagen-Klasse, um ein voll funktionsfähiges Einkaufswagen-System zu erstellen. Achte darauf, dass du die richtigen Datenstrukturen verwendest, um die Elemente im Einkaufswagen zu speichern und zu verwalten.
+
+Erstelle anschließend eine Instanz der Einkaufswagen-Klasse und teste alle Funktionen, um sicherzustellen, dass sie wie erwartet funktionieren.
+
+Viel Erfolg bei der Implementierung des Einkaufswagen-Systems!
+
+
+
+AUFGABE:
+
+Aufgabe: Entwickeln Sie ein Supermarkt-System, das in der Lage ist, die Bestandsverwaltung, den Einkaufswagen, die Kasse und die Kundenverwaltung zu verwalten. Das System sollte in der Lage sein, verschiedene Produkte zu verfolgen, den Bestand zu aktualisieren und Bestellungen abzuwickeln.
+
+Beschreibung:
+Sie sollen ein robustes Supermarkt-System entwerfen und implementieren, das eine umfangreiche Funktionalität bietet. Das System sollte in der Lage sein, die Anforderungen eines realen Supermarkts zu erfüllen und den täglichen Betrieb zu unterstützen.
+
+    Bestandsverwaltung:
+        Das System sollte in der Lage sein, den Bestand von verschiedenen Produkten zu verwalten.
+        Es sollte Funktionen zum Hinzufügen, Bearbeiten und Löschen von Produkten bieten.
+        Der Bestand sollte aktualisiert werden, wenn Produkte verkauft werden oder neue Lieferungen eintreffen.
+        Das System sollte auch in der Lage sein, den Mindestbestand zu überwachen und automatisch Benachrichtigungen zu generieren, wenn ein Produkt nachbestellt werden muss.
+
+    Einkaufswagen:
+        Das System sollte die Funktionalität bieten, dass Kunden Produkte zu ihrem Einkaufswagen hinzufügen und entfernen können.
+        Es sollte die Gesamtsumme des Einkaufs berechnen und Rabatte oder Sonderangebote berücksichtigen können.
+        Der Einkaufswagen sollte in der Lage sein, verschiedene Zahlungsmethoden zu akzeptieren und den Bezahlvorgang abzuwickeln.
+
+    Kasse:
+        Das System sollte eine Kassenfunktion bereitstellen, um den Bezahlvorgang abzuschließen.
+        Es sollte verschiedene Zahlungsmethoden unterstützen (Barzahlung, Kreditkarten, mobile Zahlungen usw.).
+        Das System sollte auch in der Lage sein, Quittungen oder Rechnungen für die Kunden zu generieren.
+
+    Kundenverwaltung:
+        Das System sollte eine Kundenverwaltungsfunktion bieten, um Kundendaten zu speichern und zu verwalten.
+        Es sollte die Möglichkeit geben, Kundenprofile anzulegen, zu bearbeiten und zu löschen.
+        Das System sollte auch Kundeninformationen für Marketingzwecke speichern und analysieren können.
+
+Berücksichtigen Sie bei der Entwicklung des Systems die Aspekte der Skalierbarkeit, Benutzerfreundlichkeit und Sicherheit. Stellen Sie sicher, dass das System zuverlässig ist und mögliche Fehler und Ausnahmesituationen behandelt. Dokumentieren Sie Ihre Designentscheidungen und stellen Sie sicher, dass das System gut strukturiert und gut wartbar ist.
+
+Hinweis: Bei einer Schwierigkeitsstufe von 9 wird erwartet, dass Sie nicht nur die grundlegenden Funktionen implementieren, sondern auch komplexere Aspekte wie Datenbankintegration, parallele Verarbeitung, Sicherheitsmaßnahmen und eine benutzerfreundliche Oberfläche berücksicht

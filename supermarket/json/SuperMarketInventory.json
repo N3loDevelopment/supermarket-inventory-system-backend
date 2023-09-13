@@ -1,0 +1,15 @@
+[
+  {
+    "item": "Kinder Bueno Dark",
+    "BarCode": "8 00000 000001",
+    "category": "Sweet",
+    "price": 2,
+    "stock": 39,
+    "maximum_stock": 100,
+    "minimum_stock": 10,
+    "supplier": "Kinder",
+    "expiry_date": "31.07.2024",
+    "discounts": 0,
+    "amount": 90
+  }
+]
